@@ -617,7 +617,7 @@ async def kbg(remob):
             await remob.client.send_file(
                 remob.chat_id,
                 remove_bg_image,
-                caption="Support @GeezSupportGroup",
+                caption="Support @steadysupportgroup",
                 force_document=True,
                 reply_to=message_id,
             )
