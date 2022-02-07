@@ -1,6 +1,8 @@
-# We're using Ubuntu 20.10
-# Thanks to geez-Userbot
-FROM vckyouuu/geezproject:buster
+# Using Python Slim-Buster
+FROM vckyouuu/geezprojects:buster
+#━━━━━ Userbot Telegram ━━━━━
+#━━━━━ By Steady-Userbot ━━━━━
+
 
 RUN git clone -b Steady-UserBot https://github.com/5GVckyy/SteadyUserbot /root/userbot
 RUN mkdir /root/userbot/.bin
