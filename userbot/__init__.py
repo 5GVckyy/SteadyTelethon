@@ -515,7 +515,7 @@ with bot:
             result = None
             query = event.text
             if event.query.user_id == uid and query.startswith(
-                    "@Geez-Project"):
+                    "@Steady-Userbot"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.photo(
                     file=Steadylogo,
@@ -534,7 +534,7 @@ with bot:
             else:
                 result = builder.article(
                     " ⚡STEADY USERBOT⚡ ",
-                    text="""**⚡STEADY USERBOT⚡\n\n Anda Bisa Membuat Geez Userbot Anda Sendiri Dengan Cara:** __TEKEN DIBAWAH INI!__ 👇""",
+                    text="""**⚡STEADY USERBOT⚡\n\n Anda Bisa Membuat Steady Userbot Anda Sendiri Dengan Cara:** __TEKEN DIBAWAH INI!__ 👇""",
                     buttons=[
                         [
                             custom.Button.url(
