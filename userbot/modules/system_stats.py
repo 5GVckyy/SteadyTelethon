@@ -165,7 +165,7 @@ async def bot_ver(event):
 
         await event.edit(
             "**⚜-**⚡STEADY⚡ Versi:** \n "
-            f"heads/Geez-Userbot-0-x634i7u1"
+            f"heads/Steady-Userbot-0-x634i7u1"
             "\n**⚜-**Revisi:**\n "
             f"{revout}"
         )
@@ -321,7 +321,7 @@ async def redis(alive):
         f" ❍ `Bot Ver  :` {BOT_VER} \n"
         f" ❍ `Modules  :` {len(modules)} Modules \n"
         f"╭═───────╼⌘╾───────═ \n"
-        f"┃[𝗥𝗲𝗽𝗼](https://github.com/SteadyUserbot)  |  [Support](t.me/steadysupportgroup)  |  "
+        f"┃[𝗥𝗲𝗽𝗼](https://github.com/5GVckyy/SteadyUserbot)  |  [Support](t.me/steadysupportgroup)  |  "
         f"[𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺](https://Instagram.com/141gs_)\n"
         f"╰═──────╼═⌘═╾───────═")
     if ALIVE_LOGO:
