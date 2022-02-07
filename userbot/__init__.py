@@ -104,7 +104,7 @@ UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
     "https://github.com/5GVckyy/SteadyUserbot")
 UPSTREAM_REPO_BRANCH = os.environ.get(
-    "UPSTREAM_REPO_BRANCH", "Steady-Userbot")
+    "UPSTREAM_REPO_BRANCH", "Geez-UserBot")
 
 # DEVS
 DEVS = (
@@ -463,7 +463,7 @@ with bot:
                     "`You cannot send inline results in this chat (caused by SendInlineBotResultRequest)`"
                 )
 
-        steadtlogo = INLINE_PIC
+        Geezlogo = INLINE_PIC
         plugins = CMD_HELP
         vr = BOT_VER
 
@@ -504,7 +504,7 @@ with bot:
             current_page_number = int(lockpage)
             buttons = paginate_help(current_page_number, plugins, "helpme")
             await event.edit(
-                file=steadylogo,
+                file=Geezlogo,
                 buttons=buttons,
                 link_preview=False,
             )
@@ -518,7 +518,7 @@ with bot:
                     "@Steady-Userbot"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.photo(
-                    file=Steadylogo,
+                    file=Geezlogo,
                     link_preview=False,
                     text=f"⚡STEADY USERBOT⚡\n\n⚡**Owner : {DEFAULTUSER}**\n\n⚡ **Bot Ver :** `5.0`\n⚡ **𝗠odules :** `{len(plugins)}`\n\n⚡ **Dev : VCKYOUUU **".format(
                         len(dugmeler),
@@ -573,7 +573,7 @@ with bot:
             if event.query.user_id == uid:  # @Steady-Userbot
                 # https://t.me/TelethonChat/115200
                 await event.edit(
-                    file=steadylogo,
+                    file=Geezlogo,
                     link_preview=True,
                     buttons=[
                         [
