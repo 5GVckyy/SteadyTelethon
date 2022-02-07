@@ -1,5 +1,5 @@
 # We're using Ubuntu 20.10
-FROM vckyy/steadyproject:buster
+FROM vckyyclone/steadyproject:buster
 
 RUN git clone -b SteadyUserbot https://github.com/5GVckyy/SteadyUserbot /root/userbot
 RUN mkdir /root/userbot/.bin
