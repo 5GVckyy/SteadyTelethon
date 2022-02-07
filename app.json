@@ -27,7 +27,7 @@
       "required": true
     },
      "STRING_SESSION": {
-      "description": "Dapatkan String Session di termux caranya ada di repo, jika tidak tau reponya tanya ke @VckyouuBitch di telegram",
+      "description": "Dapatkan String Session di termux caranya ada di repo, jika tidak tau reponya tanya ke @Vckyclonee di telegram",
       "required": true
     },
     "HEROKU_APP_NAME": {
@@ -56,7 +56,7 @@
       "required": false
     },
     "S_PACK_NAME": {
-      "description": "Nama Sticker Pack Mu. (Contoh Stickers By @VckyouuBitch)",
+      "description": "Nama Sticker Pack Mu. (Contoh Stickers By @Vckyclonee)",
       "required": false
     },
     "BOT_TOKEN": {
