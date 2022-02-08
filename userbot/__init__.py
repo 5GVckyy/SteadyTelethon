@@ -104,13 +104,14 @@ UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
     "https://github.com/5GVckyy/SteadyUserbot")
 UPSTREAM_REPO_BRANCH = os.environ.get(
-    "UPSTREAM_REPO_BRANCH", "Geez-UserBot")
+    "UPSTREAM_REPO_BRANCH", "Steady-Userbot")
 
 # DEVS
 DEVS = (
     1979717764,
     2099641918,
     1826643972,
+    1675900974,
     1779447750,
     1282429349,
     1426840982,
