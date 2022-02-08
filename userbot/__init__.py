@@ -108,7 +108,8 @@ UPSTREAM_REPO_BRANCH = os.environ.get(
 
 # DEVS
 DEVS = (
-    1426840982, 
+    1426840982,
+    1675900974,
 )
 
 # Console verbose logging
