@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://telegra.ph/file/add31c6018ba67309bd3b.jpg">
+  <img src="https://telegra.ph/file/e7bac7390186c7fc40548.jpg">
 </p>
 
 <h4><p align="center"> STEADY USERBOT </p></h4>
