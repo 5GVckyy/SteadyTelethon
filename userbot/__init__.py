@@ -520,7 +520,7 @@ with bot:
                 result = builder.photo(
                     file=Geezlogo,
                     link_preview=False,
-                    text=f"⚡STEADY USERBOT⚡\n\n⚡**Owner : {DEFAULTUSER}**\n\n⚡ **Bot Ver :** `5.0`\n⚡ **𝗠odules :** `{len(plugins)}`\n\n⚡ **Dev : VCKYOUUU **".format(
+                    text=f"⚡STEADY USERBOT⚡\n\n⚡**Owner : {DEFAULTUSER}**\n\n⚡ **Bot Ver :** `5.0`\n⚡ **𝗠odules :** `{len(plugins)}`\n\n⚡ **Dev : Vckyclonee **".format(
                         len(dugmeler),
                     ),
                     buttons=buttons,
