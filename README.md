@@ -22,11 +22,7 @@
 
 <a href="https://replit.com/@Vckyou/Geez-String-Session#main.py"><img src="https://img.shields.io/badge/run-string__session.py-magenta?style=for-the-badge&logo=repl.it" alt="generate_string" /></a>
 
-
-
-
-
- 🙏 **THANK YOU VERY MUCH FOR**
+<h4><p align="center"> THANK YOU VERY MUCH FOR </p></h4>
 
 *   [VCKYOU](https://github.com/Vckyou/Geez-Project)    Geez - Project
 *   [PocongOnlne](https://github.com/poocong/PocongUserbot)   Pocong Userbot
@@ -42,4 +38,4 @@
 ## Stay Support 🚀
 *   [LonamiWebs](https://github.com/LonamiWebs/) and [Telethon](https://github.com/LonamiWebs/Telethon)
   
-  Tes Push
+  
