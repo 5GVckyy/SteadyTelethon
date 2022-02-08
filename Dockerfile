@@ -1,5 +1,5 @@
 # Using Python Slim-Buster
-FROM vckyouuu/geezprojects:buster
+FROM xluxz/geezproject:buster
 #━━━━━ Userbot Telegram ━━━━━
 #━━━━━ By Steady-Userbot ━━━━━
 
