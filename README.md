@@ -5,10 +5,6 @@
 <h4><p align="center"> STEADY USERBOT </p></h4>
 
 
-<details>
-  <summary><b>Deploy</b></summary>
-
-
 ### Deploy Di Heroku
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/5GVckyy/SteadyUserbot)
