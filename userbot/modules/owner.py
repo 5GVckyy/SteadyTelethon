@@ -7,7 +7,7 @@ from telethon.errors import rpcbaseerrors
 
 import userbot.modules.sql_helper.gban_sql as gban_sql
 from userbot import BOTLOG_CHATID
-from userbot import CMD_HELP, DEVS
+from userbot import DEVS
 from userbot.events import register
 from userbot.utils import edit_or_reply
 
@@ -136,20 +136,3 @@ async def ownungban(event):
         await ungbun.edit(
             f"**Ungbanned** [{user.first_name}](tg://user?id={user.id}) **in** `{count}` **groups in** `{timetaken}` **seconds**!!\n**Removed from gbanlist**")
 
-
-CMD_HELP.update(
-    {
-        "owner": f"**plugin :** `only owner`\
-        \n\n• 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}cungban`\
-        \n↳ : <username/userid>\
-        \n\n• 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}cpurgeme`\
-        \n↳ : <jumlah>\
-        \n\n• 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}cpurge`\
-        \n↳ : <reply teks>\
-        \n\n• 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}cedit`\
-        \n↳ : <reply teks>\
-        \n\n• 𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}cdel`\
-        \n↳ : <reply teks>\
-    "
-    }
-)
