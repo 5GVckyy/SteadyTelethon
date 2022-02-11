@@ -1,7 +1,7 @@
 # Thanks Full To Team Ultroid
 # Ported By Vcky @Vckyyclonee
 # Copyright (c) 2021 Steady - Userbot
-# Geez - Projects https://github.com/5GVckyy/SteadyUserbot
+# Steady - Userbot https://github.com/5GVckyy/SteadyUserbot
 
 from telethon.tl.functions.channels import GetFullChannelRequest as getchat
 from telethon.tl.functions.phone import CreateGroupCallRequest as startvc
