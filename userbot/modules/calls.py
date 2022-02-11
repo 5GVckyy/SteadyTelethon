@@ -1,8 +1,7 @@
 # Thanks Full To Team Ultroid
-# Ported By Vcky @VckyouuBitch
-# Copyright (c) 2021 Geez - Projects
-# Geez - Projects https://github.com/Vckyou/Geez-UserBot
-# Ini Belum Ke Fix Ya Bg :')
+# Ported By Vcky @Vckyyclonee
+# Copyright (c) 2021 Steady - Userbot
+# Geez - Projects https://github.com/5GVckyy/SteadyUserbot
 
 from telethon.tl.functions.channels import GetFullChannelRequest as getchat
 from telethon.tl.functions.phone import CreateGroupCallRequest as startvc
@@ -16,10 +15,15 @@ from userbot.events import register
 
 NO_ADMIN = "`Sorry you are not admin :)`"
 
+def vcmention(user):
+    full_name = get_display_name(user)
+    if not isinstance(user, types.User):
+        return full_name
+    return f"[{full_name}](tg://user?id={user.id})"
 
 async def get_call(event):
     geez = await event.client(getchat(event.chat_id))
-    vcky = await event.client(getvc(geez.full_chat.call))
+    vcky = await event.client(getvc(geez.full_chat.call, limit=1))
     return vcky.call
 
 
@@ -44,20 +48,20 @@ async def _(e):
         await e.edit(f"`{str(ex)}`")
 
 
-@register(outgoing=True, pattern=r"^\.stopvc$", groups_only=True)
-async def _(e):
-    chat = await e.get_chat()
+@register(outgoing=True, pattern=r"^\.stopvc$")
+async def stop_voice(c):
+    chat = await c.get_chat()
     admin = chat.admin_rights
     creator = chat.creator
 
     if not admin and not creator:
-        return await e.edit(NO_ADMIN)
-    new_rights = ChatAdminRights(invite_users=True)
+        await c.edit(NO_ADMIN)
+        return
     try:
-        await e.client(stopvc(await get_call(e)))
-        await e.edit("`Voice Chat Stopped...`")
+        await c.client(stopvc(await get_call(c)))
+        await c.edit("`Voice chat stopped...`")
     except Exception as ex:
-        await e.edit(f"`{str(ex)}`")
+        await c.edit(f"**ERROR:** `{ex}`")
 
 
 @register(outgoing=True, pattern=r"^\.vcinvite", groups_only=True)
