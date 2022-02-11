@@ -1,13 +1,14 @@
 # Thanks Full To Ultroid
-# Ported By @VckyouuBitch
-# Copyright (c) 2021 Geez - Projects
-# Geez - Projects https://github.com/Vckyou/Geez-UserBot
+# Ported By @Vckyclonee
+# Copyright (c) 2021 Steady - Userbot
+# Steady - Userbot https://github.com/5GVckyy/SteadyUserbot
 
 import json
 import os
 import random
 import time
 
+from platform import uname
 from lyrics_extractor import SongLyrics as sl
 from telethon.tl.types import DocumentAttributeAudio
 from youtube_dl import YoutubeDL
