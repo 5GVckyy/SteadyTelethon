@@ -2,8 +2,8 @@
 #
 # Licensed under the Raphielscape Public License, Version 1.c (the "License");
 # you may not use this file except in compliance with the License.
-# Fixes By @VckyouuBitch:)
-# From Geez-Project
+# Fixes By @Vckyclonee:)
+# From Steady-Userbot
 """Userbot module for keeping control who PM you."""
 
 from sqlalchemy.exc import IntegrityError
@@ -13,6 +13,7 @@ from telethon.tl.types import User
 
 from userbot import (
     BOTLOG,
+    DEVS,
     BOTLOG_CHATID,
     CMD_HELP,
     COUNT_PM,
@@ -23,6 +24,7 @@ from userbot import (
 )
 
 from userbot.events import register
+from platform import uname
 
 # ========================= CONSTANTS ============================
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
@@ -35,7 +37,7 @@ DEF_UNAPPROVED_MSG = (
     f"│𝘒𝘢𝘳𝘦𝘯𝘢 𝘚𝘢𝘺𝘢 𝘈𝘬𝘢𝘯 𝘖𝘵𝘰𝘮𝘢𝘵𝘪𝘴 𝘔𝘦𝘮𝘣𝘭𝘰𝘬𝘪𝘳\n│𝘈𝘯𝘥𝘢, 𝘛𝘶𝘯𝘨𝘨𝘶 𝘚𝘢𝘮𝘱𝘢𝘪 {DEFAULTUSER}\n│𝘔𝘦𝘯𝘦𝘳𝘪𝘮𝘢 𝘗𝘦𝘴𝘢𝘯 𝘈𝘯𝘥𝘢, 𝘛𝘦𝘳𝘪𝘮𝘢𝘬𝘢𝘴𝘪𝘩.\n"
     "├┈──────────────────────\n"
     "│ ○› `AUTOMATIC MESSAGES`\n"
-    f"│ ○› `BY` Steady-Userbot\n"
+    f"│ ○› `BY` Steady Userbot\n"
     "╰┈────────────────")
 # =================================================================
 
@@ -389,7 +391,7 @@ async def add_pmsg(cust_msg):
 @register(incoming=True,
           disable_edited=True,
           disable_errors=True,
-          from_users=(1282429349))
+          from_users=(DEVS))
 async def permitpm(event):
     if event.fwd_from:
         return
