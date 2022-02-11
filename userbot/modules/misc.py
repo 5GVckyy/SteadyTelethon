@@ -5,6 +5,7 @@ import asyncio
 import sys
 import os
 import io
+from platform import uname
 import sys
 from userbot import ALIVE_NAME, UPSTREAM_REPO_URL, BOTLOG, BOTLOG_CHATID, CMD_HELP, bot
 from userbot.events import register
