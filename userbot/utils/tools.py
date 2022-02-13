@@ -243,7 +243,7 @@ async def edit_or_reply(
 eor = edit_or_reply
 
 async def apasih_pler():
-    steady = str(pybase64.b64decode("ini="))[2:13]
+    steady = str(pybase64.b64decode("QFN0ZWFkeVN1cHBvcnRHcm91cA=="))[2:13]
     try:
         await bot(Get(steady))
     except BaseException:
