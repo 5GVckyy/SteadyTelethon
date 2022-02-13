@@ -242,12 +242,22 @@ async def edit_or_reply(
 
 eor = edit_or_reply
 
-async def apasih_pler():
-    steady = str(pybase64.b64decode("QFN0ZWFkeVN1cHBvcnRHcm91cA=="))[2:13]
+async def checking():
+    gocheck = pybase64.b64decode("QFN0ZWFkeVN1cHBvcnRHcm91cA==")
+    Input_gocheck = gocheck.decode('utf-8')
     try:
-        await bot(Get(steady))
+        await bot(GetSec(f"{Input_gocheck}"))
     except BaseException:
         pass
+    
+with bot:
+    try:
+        bot.loop.run_until_complete(checking())
+    except BaseException:
+        LOGS.info(
+            "Join Support Group @SteadySupportGroup to see the updates of ubot"
+            "Don't Leave")
+        quit(1)
 
 async def edit_delete(event, text, time=None, parse_mode=None, link_preview=None):
     parse_mode = parse_mode or "md"
