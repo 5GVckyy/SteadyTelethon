@@ -559,7 +559,7 @@ async def pussy(args):
             "/newvideo",
             args,
             1,
-            "Cat",
+            "Geez",
             True,
             "😂",
             packname,
