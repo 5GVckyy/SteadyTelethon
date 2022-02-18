@@ -4,8 +4,9 @@
 # you may not use this file except in compliance with the License.
 #
 # Port By @vckyclonee
-# From Geez - Projects <https://github.com/5GVckyy/SteadyUserbot>
+# From SteadyUserbot <https://github.com/5GVckyy/SteadyUserbot>
 #
+
 
 import asyncio
 import io
@@ -559,7 +560,7 @@ async def pussy(args):
             "/newvideo",
             args,
             1,
-            "Geez",
+            "Cat",
             True,
             "😂",
             packname,
