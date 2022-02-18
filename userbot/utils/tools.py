@@ -1,3 +1,24 @@
+# Copyright (C) 2020 Adek Maulana
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+# recode by @vckyclonee
+# SteadyUserbot 
+# <https://github.com/5GVckyy/SteadyUserbot>
+#
+
 
 import base64
 import asyncio
@@ -300,7 +321,7 @@ async def bash(cmd):
 
 def post_to_telegraph(title, html_format_content):
     post_client = TelegraphPoster(use_api=True)
-    auth_name = "Steady-UserBot"
+    auth_name = "SteadyUserbot"
     auth_url = "https://github.com/5GVckyy/SteadyUserbot"
     post_client.create_api_token(auth_name)
     post_page = post_client.post(
@@ -608,7 +629,7 @@ async def metadata(file):
     if info.get("AudioCount"):
         data["title"] = info.get("Title", file)
         data["performer"] = (
-            info.get("Performer") or info.get("artist")
+            info.get("Performer") or info.get("artist") or user.first_name
         )
     if info.get("VideoCount"):
         data["height"] = int(float(_info[1].get("Height", 720)))
