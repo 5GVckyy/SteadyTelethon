@@ -46,11 +46,12 @@ async def kang(args):
     is_anim, is_vid = False, False
     emoji = None
     if not message:
-        return await edit_or_reply(args, f"`{random.choice(KANGING_STR)}`")
+        return await edit_or_reply(xx, "Membalas pesan/media...")
     if message.photo:
         photo = io.BytesIO()
         photo = await args.client.download_media(message.photo, photo)
     elif message.file and "image" in message.file.mime_type.split("/"):
+        await edit_or_reply(args, f"`{random.choice(KANGING_STR)}`")
         photo = io.BytesIO()
         await args.client.download_file(message.media.document, photo)
         if (
@@ -60,6 +61,7 @@ async def kang(args):
             emoji = message.media.document.attributes[1].alt
 
     elif message.file and "video" in message.file.mime_type.split("/"):
+        await edit_or_reply(args, f"`{random.choice(KANGING_STR)}`")
         xy = await message.download_media()
         if (message.file.duration or 0) <= 10:
             is_vid = True
@@ -70,6 +72,7 @@ async def kang(args):
             cv2.imwrite("geez.webp", lol)
             photo = "geez.webp"
     elif message.file and "tgsticker" in message.file.mime_type:
+        await edit_or_reply(args, f"`{random.choice(KANGING_STR)}`")
         await args.client.download_file(
             message.media.document,
             "AnimatedSticker.tgs",
@@ -82,8 +85,8 @@ async def kang(args):
         photo = 1
     elif message.message:
         photo = await create_quotly(message)
-    else:
-        await edit_delete(args, "**File Tidak Didukung !**")
+        return await xx.edit("`Unsupported File!`")
+    return await edit_or_reply(args, f"`{random.choice(KANGING_STR)}`")
     if photo:
         splat = args.text.split()
         pack = 1
@@ -191,7 +194,7 @@ async def kang(args):
                         await conv.get_response()
                         await conv.send_message(packname)
                         await conv.get_response()
-                        await edit_delete(args,
+                        return await xx.edit(
                             "`Sticker ditambahkan ke pack yang berbeda !"
                             "\nIni pack yang baru saja dibuat!"
                             f"\nTekan [Sticker Pack](t.me/addstickers/{packname}) Untuk Melihat Sticker Pack",
@@ -253,7 +256,7 @@ async def kang(args):
                 await conv.send_message(packname)
                 await conv.get_response()
                 await args.client.send_read_acknowledge(conv.chat_id)
-        await edit_or_reply(args,
+        return await xx.edit(
             "** Sticker Berhasil Ditambahkan!**"
             f"\n        ⚡ **[KLIK DISINI](t.me/addstickers/{packname})** ⚡\n**Untuk Menggunakan Stickers**",
             parse_mode="md",
