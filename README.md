@@ -14,7 +14,7 @@
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://telegram.dog/XTZ_HerokuBot?start=NUdWY2t5eS9TdGVhZHl1c2VyYm90IG1hc3Rlcg)
 
 
-### Generate String Using Replit⤵️
+### Generate String Using Replitt⤵️
 
 <a href="https://replit.com/@Vckyou/Geez-String-Session#main.py"><img src="https://img.shields.io/badge/run-string__session.py-magenta?style=for-the-badge&logo=repl.it" alt="generate_string" /></a>
 
