@@ -9,7 +9,7 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/5GVckyy/SteadyUserbot)
 
-### Deploy Di Bot Telegram
+### Deploy Di Telegram
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://telegram.dog/XTZ_HerokuBot?start=NUdWY2t5eS9TdGVhZHl1c2VyYm90IG1hc3Rlcg)
 
